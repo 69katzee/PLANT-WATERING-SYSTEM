@@ -4,10 +4,11 @@ An IoT-based automated plant watering system that connects a web dashboard with 
 
 > ⚠️ **Project Status: In Development**  
 > We are currently fixing bugs and focusing on securing the network communication layer between the ESP32 clients and the local web server.
+> So please don't expect this files of code or any file will works 
 
 ---
 
-## 🚀 Key Features
+##  Key Features
 
 What makes this project different from traditional smart watering systems is its high level of user customization and planned intelligence:
 
@@ -18,7 +19,7 @@ What makes this project different from traditional smart watering systems is its
 
 ---
 
-## 🏗️ System Architecture
+##  System Architecture
 
 The project relies on a local server environment to route commands and data securely:
 
@@ -29,7 +30,7 @@ The project relies on a local server environment to route commands and data secu
 
 ---
 
-## 🛠️ Hardware Requirements
+##  Hardware Requirements
 
 * **ESP32** Development Board
 * Soil Moisture Sensor(s)
@@ -39,7 +40,7 @@ The project relies on a local server environment to route commands and data secu
 
 ---
 
-## 💻 Getting Started
+##  Getting Started
 
 ### 1. Prerequisites
 * [Arduino IDE](https://arduino.cc) (with ESP32 board manager installed)
