@@ -1,9 +1,12 @@
 # Plant-Watering-System-With-Website
 
 An IoT-based automated plant watering system that connects a web dashboard with an **ESP32** microcontroller. Users can remotely monitor soil metrics, manually trigger irrigation, manage multiple plants, and set custom watering schedules.
+you can visit our preview website by clicking [preview website](https://69katzee.github.io/ESP32_planwateringsystemWEB/)
+
+
 
 > ⚠️ **Project Status: In Development**  
-> We are currently fixing bugs and focusing on securing the network communication layer between the ESP32 clients and the local web server.
+> We are currently building this 
 > So please don't expect this files of code or any file will works 
 
 ---
