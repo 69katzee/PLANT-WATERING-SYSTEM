@@ -1,0 +1,554 @@
+/* =====================================
+   RESET
+===================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+
+    background:#eef5ef;
+
+    color:#222;
+
+}
+
+/* =====================================
+   NAVBAR
+===================================== */
+
+nav{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:18px 8%;
+
+    background:#ffffff;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+
+    position:sticky;
+
+    top:0;
+
+    z-index:999;
+
+}
+
+.logo{
+
+    font-size:28px;
+
+    font-weight:700;
+
+    color:#2e7d32;
+
+}
+
+#addPlant{
+
+    background:#2e7d32;
+
+    color:white;
+
+    border:none;
+
+    padding:13px 25px;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    font-size:15px;
+
+    transition:.3s;
+
+}
+
+#addPlant:hover{
+
+    transform:translateY(-3px);
+
+    background:#256628;
+
+}
+
+/* =====================================
+   HERO
+===================================== */
+
+.hero{
+
+    text-align:center;
+
+    margin-top:60px;
+
+    margin-bottom:50px;
+
+}
+
+.hero h1{
+
+    font-size:48px;
+
+    color:#2e7d32;
+
+}
+
+.hero p{
+
+    margin-top:15px;
+
+    color:#666;
+
+    font-size:18px;
+
+}
+
+/* =====================================
+   PLANT CONTAINER
+===================================== */
+
+#plantContainer{
+
+    width:90%;
+
+    max-width:1300px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(340px,1fr));
+
+    gap:30px;
+
+    margin-bottom:70px;
+
+}
+
+/* =====================================
+   EMPTY
+===================================== */
+
+.empty{
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:60px;
+
+    text-align:center;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.empty h2{
+
+    margin-bottom:15px;
+
+    color:#2e7d32;
+
+}
+
+/* =====================================
+   CARD
+===================================== */
+
+.plantCard{
+
+    background:white;
+
+    border-radius:22px;
+
+    padding:25px;
+
+    box-shadow:0 15px 30px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+}
+
+.plantCard:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.cardHeader{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:20px;
+
+}
+
+.cardHeader h2{
+
+    font-size:25px;
+
+}
+
+.healthy{
+
+    background:#d7ffd8;
+
+    color:#2e7d32;
+
+    padding:6px 12px;
+
+    border-radius:25px;
+
+    font-size:13px;
+
+    font-weight:600;
+
+}
+
+.info{
+
+    margin-top:20px;
+
+}
+
+.info p{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin:12px 0;
+
+    font-size:15px;
+
+}
+
+/* =====================================
+   BUTTONS
+===================================== */
+
+.buttonGroup{
+
+    margin-top:25px;
+
+    display:flex;
+
+    gap:10px;
+
+}
+
+.details{
+
+    flex:1;
+
+    background:#2e7d32;
+
+    color:white;
+
+    border:none;
+
+    padding:13px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+}
+
+.details:hover{
+
+    background:#256628;
+
+}
+
+.water{
+
+    flex:1;
+
+    background:#1e88e5;
+
+    color:white;
+
+    border:none;
+
+    padding:13px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+}
+
+.water:hover{
+
+    background:#1565c0;
+
+}
+
+/* =====================================
+   MODAL
+===================================== */
+
+.modal{
+
+    display:none;
+
+    position:fixed;
+
+    left:0;
+
+    top:0;
+
+    width:100%;
+
+    height:100%;
+
+    background:rgba(0,0,0,.45);
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:9999;
+
+}
+
+.modal-content{
+
+    width:430px;
+
+    background:white;
+
+    border-radius:22px;
+
+    padding:30px;
+
+    animation:popup .25s;
+
+}
+
+.modal-content h2{
+
+    color:#2e7d32;
+
+    margin-bottom:20px;
+
+}
+
+.modal-content label{
+
+    display:block;
+
+    margin-top:15px;
+
+    margin-bottom:6px;
+
+    font-weight:600;
+
+}
+
+.modal-content input,
+
+.modal-content select,
+
+.modal-content textarea{
+
+    width:100%;
+
+    border:1px solid #ddd;
+
+    border-radius:10px;
+
+    padding:12px;
+
+    font-size:15px;
+
+}
+
+.modal-content textarea{
+
+    resize:none;
+
+    height:100px;
+
+}
+
+.modal-content button{
+
+    width:100%;
+
+    margin-top:20px;
+
+    border:none;
+
+    background:#2e7d32;
+
+    color:white;
+
+    padding:15px;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+}
+
+.modal-content button:hover{
+
+    background:#256628;
+
+}
+
+.close,
+
+#closeDetail{
+
+    float:right;
+
+    cursor:pointer;
+
+    font-size:28px;
+
+}
+
+/* =====================================
+   DETAIL DATA
+===================================== */
+
+.detailData{
+
+    margin-top:20px;
+
+}
+
+.detailData p{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin:14px 0;
+
+}
+
+#manualPump{
+
+    background:#1e88e5;
+
+}
+
+#manualPump:hover{
+
+    background:#1565c0;
+
+}
+
+/* =====================================
+   FOOTER
+===================================== */
+
+footer{
+
+    background:#2e7d32;
+
+    color:white;
+
+    text-align:center;
+
+    padding:30px;
+
+    margin-top:80px;
+
+}
+
+footer a{
+
+    color:white;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+}
+
+/* =====================================
+   ANIMATION
+===================================== */
+
+@keyframes popup{
+
+from{
+
+opacity:0;
+
+transform:scale(.8);
+
+}
+
+to{
+
+opacity:1;
+
+transform:scale(1);
+
+}
+
+}
+
+/* =====================================
+   MOBILE
+===================================== */
+
+@media(max-width:768px){
+
+.hero h1{
+
+font-size:34px;
+
+}
+
+.hero p{
+
+font-size:16px;
+
+}
+
+nav{
+
+padding:15px;
+
+}
+
+.logo{
+
+font-size:22px;
+
+}
+
+.modal-content{
+
+width:95%;
+
+}
+
+.buttonGroup{
+
+flex-direction:column;
+
+}
+
+}
