@@ -3,7 +3,7 @@
 An IoT-based automated plant watering system that connects a web dashboard with an **ESP32** microcontroller. Users can remotely monitor soil metrics, manually trigger irrigation, manage multiple plants, and set custom watering schedules.
 
 > ⚠️ **Project Status: In Development**  
-> We are currently fixing bugs and focusing on securing the network communication layer between the ESP32 clients and the local web server.
+> We are currently building this 
 > So please don't expect this files of code or any file will works 
 
 ---
